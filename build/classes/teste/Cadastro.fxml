@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.CadastroController">
+    <children>
+      <TextField fx:id="nomeFild" layoutX="404.0" layoutY="117.0" prefHeight="32.0" prefWidth="238.0" style="-fx-background-radius: 100;" />
+      <TextField fx:id="ruaFild" layoutX="406.0" layoutY="208.0" prefHeight="32.0" prefWidth="238.0" style="-fx-background-radius: 100;" />
+      <TextField fx:id="casaFild" layoutX="404.0" layoutY="257.0" prefHeight="32.0" prefWidth="238.0" style="-fx-background-radius: 100;" />
+      <TextField fx:id="bairroFild" layoutX="404.0" layoutY="303.0" prefHeight="32.0" prefWidth="238.0" style="-fx-background-radius: 100;" />
+      <TextField fx:id="cidadeFild" layoutX="403.0" layoutY="348.0" prefHeight="32.0" prefWidth="238.0" style="-fx-background-radius: 100;" />
+      <TextField fx:id="estadoFild" layoutX="403.0" layoutY="394.0" prefHeight="32.0" prefWidth="238.0" style="-fx-background-radius: 100;" />
+      <Button fx:id="finish" layoutX="423.0" layoutY="473.0" mnemonicParsing="false" onAction="#finalizar" style="-fx-background-radius: 100;" text="Finalizar">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="msg" alignment="CENTER" contentDisplay="CENTER" layoutX="198.0" layoutY="552.0" prefHeight="17.0" prefWidth="572.0" textFill="#e80202">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175749" height="98.0" layoutY="-16.0" stroke="#143626" strokeType="INSIDE" width="950.0" />
+      <Label layoutX="19.0" layoutY="-3.0" text="tribal." textFill="#dde1dd">
+         <font>
+            <Font name="AR BONNIE" size="56.0" />
+         </font>
+      </Label>
+      <Button layoutX="198.0" layoutY="23.0" mnemonicParsing="false" onAction="#voltar" prefHeight="15.0" prefWidth="95.0" style="-fx-background-radius: 100;" text="MENU" textFill="#5e5050">
+         <font>
+            <Font name="Akhbar MT" size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="357.0" layoutY="17.0" prefHeight="26.0" prefWidth="236.0" text="Cadastro" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <VBox layoutX="283.0" layoutY="107.0" prefHeight="321.0" prefWidth="135.0" spacing="10.0">
+         <children>
+              <Label minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="150.0" text="Nome   :" textFill="#141414">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label minHeight="16" minWidth="69" prefHeight="37.0" prefWidth="142.0" text="Senha   :" textFill="#141414">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="138.0" text="Rua      :  " textFill="#141414">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="137.0" text="Casa     :" textFill="#111111">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="135.0" text="Bairro  :" textFill="#0a0a0a">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label minHeight="16" minWidth="69" prefHeight="32.0" prefWidth="143.0" text="Cidade :" textFill="#0d0d0d">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label minHeight="16" minWidth="69" prefHeight="41.0" prefWidth="143.0" text="Estado :" textFill="#121111">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <PasswordField fx:id="senhaFild" layoutX="406.0" layoutY="163.0" prefHeight="32.0" prefWidth="238.0" style="-fx-background-radius: 100;" />
+    </children>
+</AnchorPane>

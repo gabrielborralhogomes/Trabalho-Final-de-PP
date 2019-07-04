@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.FXMLCestaController">
+   <children>
+      <Label layoutX="14.0" layoutY="64.0" prefHeight="53.0" prefWidth="301.0" text="Cesta de Compras" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="585.0" AnchorPane.topAnchor="64.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="632.0" layoutY="91.0" text="Preço">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="799.3333129882812" layoutX="134.0" layoutY="120.0" startX="-118.0" stroke="#b5aeae" />
+      <Label layoutX="790.0" layoutY="90.0" text="Quantidade">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175749" height="74.0" layoutY="-4.0" stroke="#143626" strokeType="INSIDE" width="952.0" />
+      <VBox layoutX="16.0" layoutY="126.0" prefHeight="487.0" prefWidth="550.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="146.0" prefWidth="757.0" spacing="20.0">
+               <children>
+                  <ImageView fx:id="ItemCesta1" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="146.0" prefWidth="401.0" spacing="5.0">
+                     <children>
+                        <Label fx:id="nome1" prefHeight="20.0" prefWidth="401.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autor1" prefHeight="29.0" prefWidth="401.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="editora1" prefHeight="29.0" prefWidth="401.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="remove1" mnemonicParsing="false" onAction="#removerItem1" prefHeight="25.0" prefWidth="103.0" text="Remover" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <ImageView fx:id="ItemCesta2" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="146.0" prefWidth="410.0" spacing="5.0">
+                     <children>
+                        <Label fx:id="nome2" prefHeight="35.0" prefWidth="421.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autor2" prefHeight="29.0" prefWidth="401.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="editora2" prefHeight="29.0" prefWidth="401.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="remove2" mnemonicParsing="false" onAction="#removerItem2" prefHeight="25.0" prefWidth="103.0" text="Remover" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <ImageView fx:id="ItemCesta3" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="146.0" prefWidth="424.0" spacing="5.0">
+                     <children>
+                        <Label fx:id="nome3" prefHeight="35.0" prefWidth="445.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autor3" prefHeight="29.0" prefWidth="401.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="editora3" prefHeight="29.0" prefWidth="401.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="remove3" mnemonicParsing="false" onAction="#removerItem3" prefHeight="25.0" prefWidth="103.0" text="Remover" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="586.0" layoutY="128.0" prefHeight="473.0" prefWidth="127.0" spacing="150.0">
+         <children>
+            <Label fx:id="preco1" textFill="#8a2c19">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="preco2" textFill="#8a2c19">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="preco3" textFill="#8a2c19">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button layoutX="203.0" layoutY="18.0" mnemonicParsing="false" onAction="#aoMenuC" prefHeight="31.0" prefWidth="88.0" style="-fx-background-radius: 100;" text="Menu" textFill="#5e5050">
+         <font>
+            <Font name="Akhbar MT" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="773.0" layoutY="25.0" mnemonicParsing="false" onAction="#realizarCompra" style="-fx-background-radius: 100;" text="Realizar Compra">
+         <effect>
+            <Blend mode="GREEN" />
+         </effect>
+      </Button>
+      <Button fx:id="ant" layoutX="557.0" layoutY="24.0" mnemonicParsing="false" onAction="#pagAnt" prefHeight="26.0" prefWidth="37.0" text="&lt;-" />
+      <Button fx:id="prox" layoutX="693.0" layoutY="23.0" mnemonicParsing="false" onAction="#pagProx" prefHeight="26.0" prefWidth="37.0" text="-&gt;" />
+      <Label fx:id="pag" layoutX="619.0" layoutY="21.0" text="Página" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="367.0" layoutY="21.0" mnemonicParsing="false" onAction="#mostraItens" style="-fx-background-radius: 100;" text="Atualizar Página" />
+      <Label fx:id="totalPreco" contentDisplay="CENTER" layoutX="566.0" layoutY="574.0" prefHeight="53.0" prefWidth="166.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="760.0" layoutY="128.0" prefHeight="470.0" prefWidth="124.0" spacing="60.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="qtd1" prefHeight="25.0" prefWidth="54.0" promptText="1" />
+                  <Button fx:id="ok1" mnemonicParsing="false" onAction="#mudarQunat1" text="OK" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="qtd2" prefHeight="25.0" prefWidth="54.0" promptText="1" />
+                  <Button fx:id="ok2" mnemonicParsing="false" onAction="#mudarQunat2" text="OK" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="qtd3" prefHeight="25.0" prefWidth="54.0" promptText="1" />
+                  <Button fx:id="ok3" mnemonicParsing="false" onAction="#mudarQunat3" text="OK" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="17.0" prefHeight="83.0" prefWidth="149.0" text="tribal." textFill="#dde1dd">
+         <font>
+            <Font name="AR BONNIE" size="56.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

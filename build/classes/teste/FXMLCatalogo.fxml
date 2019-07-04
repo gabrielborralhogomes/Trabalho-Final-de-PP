@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.FXMLCatalogoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175749" height="74.0" layoutY="-4.0" stroke="#143626" strokeType="INSIDE" width="950.0" />
+      <Label layoutX="17.0" layoutY="-2.0" text="tribal." textFill="#dde1dd">
+         <font>
+            <Font name="AR BONNIE" size="56.0" />
+         </font>
+      </Label>
+      <Button layoutX="189.0" layoutY="17.0" mnemonicParsing="false" onAction="#voltarParaMenu" prefHeight="15.0" prefWidth="95.0" style="-fx-background-radius: 100;" text="Menu" textFill="#5e5050">
+         <font>
+            <Font name="Akhbar MT" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="ant" layoutX="594.0" layoutY="20.0" mnemonicParsing="false" onAction="#voltarPagina" prefHeight="26.0" prefWidth="37.0" text="&lt;-" />
+      <Button fx:id="prox" layoutX="727.0" layoutY="20.0" mnemonicParsing="false" onAction="#avancarPagina" prefHeight="26.0" prefWidth="37.0" text="-&gt;" />
+      <Label fx:id="pag" layoutX="652.0" layoutY="19.0" text="Página" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="29.0" layoutY="81.0" prefHeight="571.0" prefWidth="403.0" spacing="15.0">
+         <children>
+            <HBox prefHeight="177.0" prefWidth="413.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto1" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="176.0" prefWidth="289.0">
+                     <children>
+                        <Label fx:id="nomeProduto1" prefHeight="38.0" prefWidth="280.0" text="Demolidor - Queda de Murdock" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto1" prefHeight="29.0" prefWidth="139.0" text="Autor" />
+                        <Label fx:id="editoraProduto1" prefHeight="29.0" prefWidth="139.0" text="Editora" />
+                        <Label fx:id="precoProduto1" prefHeight="29.0" prefWidth="139.0" text="Preço">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="189.0" prefWidth="442.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto2" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="188.0" prefWidth="315.0">
+                     <children>
+                        <Label fx:id="nomeProduto2" prefHeight="37.0" prefWidth="279.0" text="Homem Aranha - A Ultima Caçada de Kraven" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto2" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="editoraProduto2" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="precoProduto2" prefHeight="29.0" prefWidth="139.0" text="Preço">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="178.0" prefWidth="442.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto3" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="177.0" prefWidth="336.0">
+                     <children>
+                        <Label fx:id="nomeProduto3" prefHeight="37.0" prefWidth="273.0" text="Batman - A Piada Mortal" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto3" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="editoraProduto3" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="precoProduto3" prefHeight="29.0" prefWidth="139.0" text="Preço">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="487.0" layoutY="80.0" prefHeight="571.0" prefWidth="403.0" spacing="15.0">
+         <children>
+            <HBox prefHeight="214.0" prefWidth="440.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto4" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="178.0" prefWidth="304.0">
+                     <children>
+                        <Label fx:id="nomeProduto4" prefHeight="37.0" prefWidth="273.0" text="Oblivion Song- Canção do Silêncio" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto4" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="editoraProduto4" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="precoProduto4" prefHeight="29.0" prefWidth="139.0" text="Preço">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="224.0" prefWidth="440.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto5" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="188.0" prefWidth="292.0">
+                     <children>
+                        <Label fx:id="nomeProduto5" prefHeight="37.0" prefWidth="297.0" text="A Saga do Monstro do Pântano" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto5" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="editoraProduto5" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="precoProduto5" prefHeight="29.0" prefWidth="139.0" text="Preço">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="211.0" prefWidth="440.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto6" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefHeight="175.0" prefWidth="459.0">
+                     <children>
+                        <Label fx:id="nomeProduto6" prefHeight="37.0" prefWidth="273.0" text="Flash- Seguindo em Frente" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto6" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="editoraProduto6" prefHeight="29.0" prefWidth="139.0" text="Label" />
+                        <Label fx:id="precoProduto6" prefHeight="29.0" prefWidth="139.0" text="Preço">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="baddCP1" layoutX="377.0" layoutY="176.0" mnemonicParsing="false" onAction="#addCarrinhoP1" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP2" layoutX="370.0" layoutY="371.0" mnemonicParsing="false" onAction="#addCarrinhoP2" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP3" layoutX="371.0" layoutY="571.0" mnemonicParsing="false" onAction="#addCarrinhoP3" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP4" layoutX="833.0" layoutY="176.0" mnemonicParsing="false" onAction="#addCarrinhoP4" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP5" layoutX="833.0" layoutY="372.0" mnemonicParsing="false" onAction="#addCarrinhoP5" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP6" layoutX="834.0" layoutY="572.0" mnemonicParsing="false" onAction="#addCarrinhoP6" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+   </children>
+</AnchorPane>

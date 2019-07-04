@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.FXMLCestaVaziaController">
+   <children>
+      <Label layoutX="9.0" layoutY="94.0" prefHeight="53.0" prefWidth="301.0" text="Cesta de Compras" wrapText="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175749" height="74.0" layoutX="-5.0" stroke="#143626" strokeType="INSIDE" width="957.0" />
+      <Label layoutX="16.0" layoutY="3.0" text="tribal." textFill="#dde1dd">
+         <font>
+            <Font name="AR BONNIE" size="56.0" />
+         </font>
+      </Label>
+      <Button layoutX="215.0" layoutY="22.0" mnemonicParsing="false" onAction="#aoMenuCV" prefHeight="15.0" prefWidth="95.0" style="-fx-background-radius: 100;" text="Menu" textFill="#5e5050">
+         <font>
+            <Font name="Akhbar MT" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="12.0" layoutY="126.0" prefHeight="113.0" prefWidth="736.0" text="Sua cesta está vazia. Vá em MENU -&gt; Catálogo para adicionar itens." textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
