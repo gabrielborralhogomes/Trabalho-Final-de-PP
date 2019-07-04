@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.FXMLMenuController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#61cdb282" height="364.0" layoutY="339.0" stroke="#52b95c" strokeType="INSIDE" width="960.0" />
+      <ImageView fx:id="prin" fitHeight="260.0" fitWidth="378.0" layoutX="-7.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Pictures/ComicBooks.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175749" height="84.0" layoutY="-1.0" stroke="#143626" strokeType="INSIDE" width="958.0" />
+      <Label layoutX="17.0" layoutY="7.0" prefHeight="83.0" prefWidth="149.0" text="tribal." textFill="#dde1dd">
+         <font>
+            <Font name="AR BONNIE" size="56.0" />
+         </font>
+      </Label>
+      <Text layoutX="441.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem-vindo(a) à Tribal Comic Store!" wrappingWidth="404.0000715367496">
+         <font>
+            <Font name="AR BONNIE" size="36.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER_LEFT" layoutX="186.0" layoutY="6.0" prefHeight="60.0" prefWidth="733.0" spacing="20.0">
+         <children>
+              <Button fx:id="bCatalogo" onAction="#botaoCatalogo" prefHeight="25.0" prefWidth="189.0" text="Catálogo" />
+            <Button fx:id="bPesquisar" onAction="#botaoPesquisar" prefHeight="25.0" prefWidth="199.0" text="Pesquisar" />
+            <Button fx:id="bCesta" onAction="#botaoCesta" prefHeight="25.0" prefWidth="199.0" text="Cesta de Compras" />
+            <VBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="125.0" spacing="10.0">
+               <children>
+                  <Button fx:id="inOut" mnemonicParsing="false" onAction="#login" prefHeight="20.0" prefWidth="80.0" text="Login" />
+                  <Button fx:id="reg" mnemonicParsing="false" onAction="#regist" prefHeight="20.0" prefWidth="80.0" text="Cadastro" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="243.0" layoutX="22.0" layoutY="394.0" stroke="WHITE" strokeType="INSIDE" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="243.0" layoutX="329.0" layoutY="395.0" stroke="WHITE" strokeType="INSIDE" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="243.0" layoutX="636.0" layoutY="395.0" stroke="WHITE" strokeType="INSIDE" width="293.0" />
+      <HBox alignment="TOP_CENTER" layoutX="54.0" layoutY="398.0" prefHeight="228.0" prefWidth="832.0" spacing="80.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pesquise sua HQ por gênero">
+               <font>
+                  <Font name="Akhbar MT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Catálogo com diversos itens" wrappingWidth="234.7890625">
+               <font>
+                  <Font name="Akhbar MT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entregamos em todo o Brasil">
+               <font>
+                  <Font name="Akhbar MT Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <ImageView fx:id="gen1" fitHeight="100.0" fitWidth="72.0" layoutX="86.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../produto6.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gen2" fitHeight="100.0" fitWidth="70.0" layoutX="200.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../produto11.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gen3" fitHeight="117.0" fitWidth="75.0" layoutX="148.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../produto9.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="div" fitHeight="160.0" fitWidth="227.0" layoutX="366.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Pictures/extralarge.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ship" fitHeight="133.0" fitWidth="245.0" layoutX="664.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Pictures/shipping.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

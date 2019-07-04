@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.FXMLPesquisaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175749" height="89.0" layoutY="-1.0" stroke="#143626" strokeType="INSIDE" width="950.0" />
+      <Label layoutX="19.0" layoutY="3.0" text="tribal." textFill="#dde1dd">
+         <font>
+            <Font name="AR BONNIE" size="56.0" />
+         </font>
+      </Label>
+      <Button layoutX="188.0" layoutY="22.0" mnemonicParsing="false" onAction="#voltarParaMenu" prefHeight="15.0" prefWidth="95.0" style="-fx-background-radius: 100;" text="Menu" textFill="#5e5050">
+         <font>
+            <Font name="Akhbar MT" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="ant" layoutX="378.0" layoutY="56.0" mnemonicParsing="false" onAction="#voltarPagina" prefHeight="26.0" prefWidth="37.0" text="&lt;-" />
+      <Button fx:id="prox" layoutX="511.0" layoutY="56.0" mnemonicParsing="false" onAction="#avancarPagina" prefHeight="26.0" prefWidth="37.0" text="-&gt;" />
+      <Label fx:id="pag" layoutX="436.0" layoutY="55.0" text="Página" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="barraDePesquisa" layoutX="300.0" layoutY="25.0" prefHeight="25.0" prefWidth="381.0" promptText="Digite..." />
+      <Button fx:id="bConfPesquisa" layoutX="681.0" layoutY="25.0" mnemonicParsing="false" onAction="#acaoPesquisarP" prefHeight="25.0" prefWidth="71.0" text="Pesquisar" />
+      <ComboBox fx:id="cbGenerop" layoutX="784.0" layoutY="25.0" prefHeight="25.0" prefWidth="102.0" promptText="Gênero" />
+      <Button layoutX="886.0" layoutY="25.0" mnemonicParsing="false" onAction="#acaoFiltrarCategoria" prefHeight="15.0" prefWidth="47.0" text="Filtrar" />
+      <VBox alignment="CENTER" layoutX="34.0" layoutY="98.0" prefHeight="571.0" prefWidth="403.0" spacing="15.0">
+         <children>
+            <HBox prefHeight="177.0" prefWidth="413.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto1" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Pictures/download.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="176.0" prefWidth="289.0">
+                     <children>
+                        <Label fx:id="nomeProduto1" prefHeight="38.0" prefWidth="280.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto1" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="editoraProduto1" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="precoProduto1" prefHeight="29.0" prefWidth="139.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="189.0" prefWidth="442.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto2" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Pictures/download.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="188.0" prefWidth="315.0">
+                     <children>
+                        <Label fx:id="nomeProduto2" prefHeight="37.0" prefWidth="279.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto2" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="editoraProduto2" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="precoProduto2" prefHeight="29.0" prefWidth="139.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="178.0" prefWidth="442.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto3" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Pictures/download.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="177.0" prefWidth="336.0">
+                     <children>
+                        <Label fx:id="nomeProduto3" prefHeight="37.0" prefWidth="273.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto3" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="editoraProduto3" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="precoProduto3" prefHeight="29.0" prefWidth="139.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="494.0" layoutY="98.0" prefHeight="571.0" prefWidth="403.0" spacing="15.0">
+         <children>
+            <HBox prefHeight="214.0" prefWidth="440.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto4" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Pictures/download.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="178.0" prefWidth="304.0">
+                     <children>
+                        <Label fx:id="nomeProduto4" prefHeight="37.0" prefWidth="273.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto4" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="editoraProduto4" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="precoProduto4" prefHeight="29.0" prefWidth="139.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="224.0" prefWidth="440.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto5" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Pictures/download.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="188.0" prefWidth="292.0">
+                     <children>
+                        <Label fx:id="nomeProduto5" prefHeight="37.0" prefWidth="297.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto5" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="editoraProduto5" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="precoProduto5" prefHeight="29.0" prefWidth="139.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="211.0" prefWidth="440.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="pngProduto6" fitHeight="146.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Pictures/download.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="175.0" prefWidth="459.0">
+                     <children>
+                        <Label fx:id="nomeProduto6" prefHeight="37.0" prefWidth="273.0" textFill="#3b38e1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="autorProduto6" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="editoraProduto6" prefHeight="29.0" prefWidth="139.0" />
+                        <Label fx:id="precoProduto6" prefHeight="29.0" prefWidth="139.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="baddCP1" layoutX="382.0" layoutY="193.0" mnemonicParsing="false" onAction="#addCarrinhoP1" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP2" layoutX="375.0" layoutY="388.0" mnemonicParsing="false" onAction="#addCarrinhoP2" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP3" layoutX="376.0" layoutY="588.0" mnemonicParsing="false" onAction="#addCarrinhoP3" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP4" layoutX="840.0" layoutY="194.0" mnemonicParsing="false" onAction="#addCarrinhoP4" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP5" layoutX="840.0" layoutY="390.0" mnemonicParsing="false" onAction="#addCarrinhoP5" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+      <Button fx:id="baddCP6" layoutX="841.0" layoutY="590.0" mnemonicParsing="false" onAction="#addCarrinhoP6" prefHeight="29.0" prefWidth="91.0" text="Add Carrinho" />
+   </children>
+</AnchorPane>

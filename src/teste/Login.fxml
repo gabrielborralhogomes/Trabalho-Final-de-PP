@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.LoginController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="145.0" prefHeight="43.0" prefWidth="182.0" text="Login" textAlignment="RIGHT">
+         <font>
+            <Font name="Bodoni MT" size="41.0" />
+         </font>
+      </Label>
+      <Button layoutX="446.0" layoutY="419.0" mnemonicParsing="false" onAction="#Entrar" text="Entrar" textFill="#0d0d0d">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="msg" alignment="CENTER" layoutX="354.0" layoutY="510.0" prefHeight="28.0" prefWidth="243.0" textFill="#da0000">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175749" height="84.0" layoutX="-2.0" layoutY="-3.0" stroke="#143626" strokeType="INSIDE" width="952.0" />
+      <Label layoutX="19.0" layoutY="5.0" prefHeight="83.0" prefWidth="151.0" text="tribal." textFill="#dde1dd">
+         <font>
+            <Font name="AR BONNIE" size="56.0" />
+         </font>
+      </Label>
+      <Button layoutX="195.0" layoutY="23.0" mnemonicParsing="false" onAction="#voltar" style="-fx-background-radius: 100;" text="Menu">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Button>
+      <VBox alignment="TOP_CENTER" layoutX="278.0" layoutY="240.0" prefHeight="129.0" prefWidth="390.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="390.0" spacing="37.0">
+               <children>
+                  <Label text="Nome :">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameFild" style="-fx-background-radius: 100;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="390.0" spacing="30.0">
+               <children>
+                  <Label text=" Senha :">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="senhaFild" style="-fx-background-radius: 100;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
