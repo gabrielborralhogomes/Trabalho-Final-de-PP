@@ -1,4 +1,4 @@
-## Loja
+## Loja de HQs
 
 Trabalho Final de Paradigmas da Programção
 
