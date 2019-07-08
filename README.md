@@ -1,6 +1,6 @@
 ## Loja de HQs
 
-Trabalho Final de Paradigmas da Programação.
+Trabalho Final de Paradigmas da Programação - 2019.1
 
 Feito por: [Gabriel Borralho](https://github.com/gabrielrhcp), [Luis Henrique Mota](https://github.com/Luisnofb) e [Hannah Moreira](https://github.com/hannah-costa).
 
