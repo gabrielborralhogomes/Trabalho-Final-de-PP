@@ -2,7 +2,7 @@
 
 Trabalho Final de Paradigmas da Programação.
 
-Feito por: [Paulo Gabriel Borralho](https://github.com/gabrielrhcp), [Luis Henrique da Mota Freitas](https://github.com/Luisnofb) e [Hannah Moreira Costa](https://github.com/hannah-costa).
+Feito por: [Gabriel Borralho](https://github.com/gabrielrhcp), [Luis Henrique Mota](https://github.com/Luisnofb) e [Hannah Moreira](https://github.com/hannah-costa).
 
 O programa foi feito baseado no site da Amazon, ele contém 24 produtos no catálogo e nele você pode fazer coisas como:
 
