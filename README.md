@@ -12,6 +12,5 @@ O programa foi feito baseado no site da Amazon, ele contém 24 produtos no catá
 - Adicionar
 - Remover
 - Comprar
-- Entre outras coisas
 
 <p align="center"><img src="https://github.com/gabrielrhcp/Loja/blob/master/src/menu.png"/></p>
